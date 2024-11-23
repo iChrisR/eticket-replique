@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eticket - Compra de boletos para eventos en Colombia</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts & Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="row header">
+                <div class="col header" id="logotipo">
+                    <img id="img-logo" src="assets/img/logo.png">
+                </div>
+                <div class="col header" id="buscador">
+                    <input type="text" class="form-control" placeholder="Buscar artistar y/o eventos">
+                    <a href="#" class="btn btn-primary">Buscar</a>
+                </div>
+                <div class="col header" id="cuenta">
+                    <a href="#" class="btn btn-primary">Iniciar sesión</a>
+                    <a href="#" id="registro" class="btn">Registrate</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <section id="menu-horizontal">
+        <div class="row menu">
+            <div class="row categorias">
+                <a href="#" class="btn categoria d-lg-block">Conciertos</a>
+                <a href="#" class="btn categoria d-lg-block">Deportes</a>
+                <a href="#" class="btn categoria d-lg-block">Teatro</a>
+                <a href="#" class="btn categoria d-lg-block">Culturales</a>
+                <a href="#" class="btn categoria d-lg-block">Comedia</a>
+                <a href="#" class="btn categoria d-lg-block">Familiares</a>
+                <a href="#" class="btn categoria d-lg-block">Congresos</a>
+                <a href="#" class="btn categoria d-lg-block">Festivales</a>
+            </div>
+            <div class="row otromenu">
+                <a href="#" class="btn otromenu d-lg-none">Categorias</a>
+                <a href="#" class="btn otromenu">Puntos de venta</a>
+                <a href="#" class="btn otromenu">Ayuda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carusel -->
+    <section id="carousel">
+        <div id="carousel-container">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel/carousel-first.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel/carousel-second.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel/carousel-third.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-bottom"></div>
+    </section>
+
+    <!-- Fondo -->
+    <div class="fondo">
+
+        <!-- Filtros -->
+        <section id="filtros">
+            <div id="filtros-container">
+                <div class="row filtros">
+                    <div class="col filtros" id="col-eventos">
+                        <a class="btn btn-filtro" href="#">
+                            <span class="material-icons mr-5">list</span>
+                            TODOS LOS EVENTOS
+                            <span class="material-icons ml-5">arrow_drop_down</span>
+                        </a>
+                    </div>
+                    <div class="col filtros" id="col-ubicacion">
+                        <a class="btn btn-filtro" href="#">
+                            <span class="material-icons mr-5">location_on</span>
+                            TODO COLOMBIA
+                            <span class="material-icons ml-5">arrow_drop_down</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="fondo-evento">
+            <!-- Anuncio -->
+            <div id="anuncio">
+                <img src="https://cdn.eticket.co/imagenes/imgbnrs/241121102606562_banner_Cabify.jpg">
+            </div>
+
+            <!-- Eventos -->
+            <section id="eventos">
+                <div id="eventos-tittle">
+                    <div>EVENTOS EN TU CIUDAD</div>
+                </div>
+                <div id="eventos-container">
+                    <div class="row eventos">
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/1.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">APOLO 7</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/2.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">LEO RIZZI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/3.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">VINO AL PARQUE V EDICIÓN DESPIERTA TUS SENTIDOS</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/eventos/4.png" class="card-img-top" alt="...">
+                            <div class="card-evento-tittle-container">
+                                <div class="card-evento-tittle">ANDREA BOCELLI</div>
+                            </div>
+                            <div class="card-evento-text-container">
+                                <div class="card-evento-text">BOGOTÁ</div>
+                            </div>
+                            <a href="#" class="btn-evento">Ver Eventos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="footer-linea"></div>
+        <div id="footer-marco"></div>
+        <div class="footer-background">
+            <div class="footer-container">
+                <div class="row links">
+                    <div class="row primera-fila">
+                        <a class="footer-link-text" href="#">Inicio</a>
+                        <a class="footer-link-text" href="#">Conciertos</a>
+                        <a class="footer-link-text" href="#">Deportes</a>
+                        <a class="footer-link-text" href="#">Teatro</a>
+                        <a class="footer-link-text" href="#">Culturales</a>
+                        <a class="footer-link-text" href="#">Comedia</a>
+                        <a class="footer-link-text" href="#">Familiares</a>
+                        <a class="footer-link-text" href="#">Congresos</a>
+                        <a class="footer-link-text" href="#">Festivales</a>
+                    </div>
+                    <div class="row segunda-fila">
+                        <a class="footer-link-text" href="#">¡Recoge tus boletos!</a>
+                        <a class="footer-link-text" href="#">Ubicación de Puntos de venta</a>
+                        <a class="footer-link-text" href="#">Suscríbete al boletín</a>
+                        <a class="footer-link-text" href="#">Promociones</a>
+                        <a class="footer-link-text" href="#">Vende tus boletos en eticket</a>
+                        <a class="footer-link-text" href="#">Preguntas Frecuentes</a>
+                        <a class="footer-link-text" href="#">Comunicados</a>
+                        <a class="footer-link-text" href="#">Contáctanos</a>
+                        <a class="footer-link-text" href="#">Términos y Condiciones</a>
+                        <a class="footer-link-text" href="#">PQRS</a>
+                        <a class="footer-link-text" href="#">PULEP</a>
+                        <a class="footer-link-text" href="#">SIC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2024 :: eticket :: Todos los Derechos Reservados :: https://www.eticket.co/</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
